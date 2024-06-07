@@ -14,7 +14,7 @@ def f1_score(tp, fp, fn):
     f1 = 2*(p*r)/(p+r)
     return f1
 
-def exercise1(tp, fp, fn):
+def compute_metric(tp, fp, fn):
     if type(tp) is not int:
         print('tp must be int')
         return
