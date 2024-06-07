@@ -3,22 +3,22 @@ import random
 
 #Ex3
 
-def MAE(y, y_hat):
+def mae(y, y_hat):
     return abs(y - y_hat)
 
-def MSE(y, y_hat):
+def mse(y, y_hat):
     return (y - y_hat)**2
 
-def RMSE(y, y_hat):
-    return math.sqrt(MSE(y, y_hat))
+def rmse(y, y_hat):
+    return math.sqrt(mse(y, y_hat))
 
 loss_func_dict = {
-    "MAE": MAE,
-    "MSE": MSE,
-    "RMSE": RMSE
+    "MAE": mae,
+    "MSE": mse,
+    "RMSE": rmse
 }
 
-def exercise3():
+def compute_loss_function():
     num_samples = input('Input number of samples ( integer number ) which are generated: ')
     if not num_samples.isnumeric():
         print('number of samples must be an integer number')
