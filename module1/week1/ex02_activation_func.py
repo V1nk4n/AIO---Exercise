@@ -34,7 +34,7 @@ activation_func_dict = {
     "elu": elu
 }
 
-def exercise2():
+def compute_activation_function():
     x = input('input x = ')
     if not is_number(x):
         print('x must be a number')
