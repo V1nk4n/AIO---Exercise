@@ -7,6 +7,7 @@ import ex05_mean_root_error
 if __name__ == "__main__":
 
     print("Exercise 01")
+
     ex01_metric.compute_metric(tp=2, fp=3, fn=4)
 
     print("Exercise 02")
