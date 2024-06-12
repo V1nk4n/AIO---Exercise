@@ -6,7 +6,7 @@ def min_cost(matrix, i, j, source, target):
     sub_cost = matrix[i-1][j-1] + (1 if source[j-1] != target[i-1] else 0)
     return min(del_cost, ins_cost, sub_cost)
 
-def compute_Levenshtein_distance(source, target):
+def compute_levenshtein_distance(source, target):
     M = len(source)+1
     N = len(target)+1
     matrix = np.zeros((N, M))
@@ -26,5 +26,5 @@ def compute_Levenshtein_distance(source, target):
     return matrix[N-1][M-1]
             
 
-assert compute_Levenshtein_distance("hi", "hello") == 4.0
-print(compute_Levenshtein_distance("hola", "hello") )
+assert np.isclose(compute_levenshtein_distance("hi", "hello"), 4.0, rtol=1e-09, atol=1e-09)
+print(compute_levenshtein_distance("hola", "hello") )

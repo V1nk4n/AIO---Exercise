@@ -1,7 +1,6 @@
 
 def count_word_in_file(path):
     dictionary = {}
-    data = []
     file = open(path)
     lines = file.readlines()
 
