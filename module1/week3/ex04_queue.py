@@ -1,5 +1,3 @@
-"test"
-
 
 class MyQueue:
     def __init__(self, capacity):
